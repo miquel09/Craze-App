@@ -9,17 +9,17 @@ using Xamarin.Forms.Xaml;
 
 namespace Craze.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginPage : ContentPage
-    {
-        public LoginPage()
-        {
-            InitializeComponent();
-        }
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class LoginPage : ContentPage
+	{
+		public LoginPage ()
+		{
+			InitializeComponent ();
+		}
 
-        private async void btn_LogInClicked(object sender, EventArgs e)
+        private void btnLogIn_Clicked(object sender, EventArgs e)
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new MenuPage());
+            Navigation.PushAsync(new MenuPage());
         }
     }
 }

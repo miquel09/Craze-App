@@ -26,7 +26,7 @@ namespace Craze
         {
             InitializeComponent();
 
-            NavigationPage navPage = new NavigationPage(new LoginPage());
+            NavigationPage navPage = new NavigationPage(new MainPage());
             navPage.BarBackgroundColor = new Color(250.0 / 255.0, 180.0 / 255.0, 200.0 / 255.0);
             navPage.BackgroundColor = new Color(190.0 / 255, 200.0 / 255, 230.0 / 255);
 

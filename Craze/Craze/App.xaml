@@ -3,6 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Craze.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="NormalFont">
+                <On Platform="Android" Value="OpenSans-Regular.ttf#Open Sans" />
+            </OnPlatform>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
