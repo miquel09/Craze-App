@@ -6,6 +6,7 @@ using SQLite;
 
 using Craze.Data.Abstract;
 using Craze.Domain;
+using Craze.Utility.Exceptions;
 
 namespace Craze.Data.Sqlite
 {
@@ -50,7 +51,7 @@ namespace Craze.Data.Sqlite
         public void InsertAnimal(Animal anAnimal)
         {
             if (GetAnimalByName(anAnimal.Name) != null) {
-                throw new Exception();
+                throw new DuplicateEntryException();
             }
 
             if (anAnimal.Id != 0) {

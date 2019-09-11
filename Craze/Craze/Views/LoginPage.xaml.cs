@@ -19,7 +19,7 @@ namespace Craze.Views
 
         private void btnLogIn_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new MenuPage());
+            Navigation.PushAsync(new ScanPage());
         }
     }
 }
