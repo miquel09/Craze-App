@@ -1,14 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Craze.Views.AnimalDetail">
+             x:Class="Craze.Views.VideoPage">
     <ContentPage.Content>
         <Grid x:Name="MainElement">
             <WebView x:Name="Video" Grid.Column="0" Grid.Row="0"/>
-            <StackLayout Grid.Column="0" Grid.Row="1">
-                <Label x:Name="Name"/>
-                <Label x:Name="Description"/>
-            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

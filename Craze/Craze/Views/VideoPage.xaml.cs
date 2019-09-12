@@ -1,5 +1,4 @@
-﻿using Craze.Domain;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,16 +10,13 @@ using Xamarin.Forms.Xaml;
 namespace Craze.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AnimalDetail : ContentPage
+	public partial class VideoPage : ContentPage
 	{
-        public AnimalDetail (Animal anAnimal)
+		public VideoPage (string videoId)
 		{
-            InitializeComponent();
+			InitializeComponent ();
 
-            Name.Text = anAnimal.Name;
-            Description.Text = anAnimal.Description;
-
-            string youtubeUrl = "https://www.youtube.com/embed/" + anAnimal.VideoId;
+            string youtubeUrl = "https://www.youtube.com/embed/" + videoId;
 
             HtmlWebViewSource personHtmlSource = new HtmlWebViewSource();
             personHtmlSource.SetBinding(HtmlWebViewSource.HtmlProperty, "HTMLDesc");

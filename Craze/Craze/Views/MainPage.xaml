@@ -8,7 +8,7 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="125" />
             </Grid.RowDefinitions>
-            <Image Source="Mammoth.png"
+            <Image Source="Icon.png"
                    HeightRequest="200"/>
             <StackLayout Grid.Row="1"
                          Spacing="0"
